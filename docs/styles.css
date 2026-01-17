@@ -106,11 +106,16 @@ p:last-child {
 /* What You Get */
 .what-you-get ul {
     list-style: none;
+    background: var(--bg-alt);
+    border-radius: 8px;
+    padding: 8px 24px;
 }
 
 .what-you-get li {
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 15px;
 }
 
 .what-you-get li:last-child {
@@ -119,27 +124,35 @@ p:last-child {
 
 .what-you-get li strong {
     color: var(--text);
-    display: block;
-    margin-bottom: 4px;
+    font-weight: 600;
 }
 
 /* Steps */
 .steps {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
+    background: var(--bg-alt);
+    border-radius: 8px;
+    padding: 8px 0;
 }
 
 .step {
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.step:last-child {
+    border-bottom: none;
 }
 
 .step-num {
     flex-shrink: 0;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     background: var(--accent);
     color: #fff;
     border-radius: 50%;
@@ -148,17 +161,24 @@ p:last-child {
     justify-content: center;
     font-weight: 600;
     font-size: 14px;
+    line-height: 1;
+}
+
+.step-content {
+    flex: 1;
 }
 
 .step strong {
     display: block;
     color: var(--text);
     margin-bottom: 4px;
+    font-size: 16px;
 }
 
 .step p {
     margin: 0;
     font-size: 15px;
+    color: var(--text-secondary);
 }
 
 /* Expectations */
@@ -340,6 +360,21 @@ footer a {
     font-size: 15px;
     color: #0369a1;
     margin-bottom: 32px;
+}
+
+/* Test Bypass */
+.test-bypass {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.test-bypass a {
+    color: var(--text-muted);
+    text-decoration: underline;
+}
+
+.test-bypass a:hover {
+    color: var(--text-secondary);
 }
 
 /* Responsive */
