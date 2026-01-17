@@ -7,62 +7,72 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <p class="eyebrow">ZAVIA Strategy Academy</p>
-            <h1>Submit Your Analysis</h1>
-            <p class="tagline">Module 1: Structural Clarity</p>
+    <div class="site">
+        <header class="page-header">
+            <nav class="page-nav">
+                <a href="module-1.html">← Back to Module 1</a>
+            </nav>
+            <p class="page-eyebrow">MODULE 1 ASSIGNMENT</p>
+            <h1 class="page-title">Submit Your Analysis</h1>
+            <p class="page-subtitle">
+                Structural analysis of a situation where effort isn't producing results.
+            </p>
         </header>
 
-        <nav class="module-nav">
-            <a href="module-1.html">← Back to Reading</a>
-        </nav>
-
-        <section>
-            <div class="notice" style="margin-bottom: 32px;">
-                <strong>Before you submit:</strong> Make sure your analysis is 500-800 words and passes the Clarity Test (specific, explains mechanism, makes prediction, offers non-obvious insight).
+        <section class="submit-section">
+            <div class="notice-box">
+                <p>
+                    <strong>Before submitting:</strong> Make sure your analysis is 800-1200 words and passes
+                    the Structural Clarity Test—specific, mechanistic, predictive, and non-obvious.
+                </p>
             </div>
 
             <form class="submission-form" action="https://formspree.io/f/PLACEHOLDER" method="POST">
                 <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Full name">
+                    <label class="form-label" for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required class="form-input" placeholder="Full name">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required class="form-input" placeholder="you@example.com">
                 </div>
 
                 <div class="form-group">
-                    <label for="analysis">Your Structural Analysis</label>
-                    <textarea id="analysis" name="analysis" required rows="20" placeholder="Paste your 500-800 word analysis here..."></textarea>
-                    <p class="form-hint">Word count will be verified. Submissions outside 500-800 words will be returned.</p>
+                    <label class="form-label" for="analysis">Your Structural Analysis</label>
+                    <textarea id="analysis" name="analysis" required class="form-textarea" placeholder="Paste your 800-1200 word analysis here..."></textarea>
+                    <p class="form-hint">Include: outcome gap, structural factors, mechanisms, leverage point, and proposed intervention.</p>
                 </div>
 
-                <div class="form-group checkbox-group">
-                    <label>
-                        <input type="checkbox" name="understand" required>
-                        I understand my submission will receive <strong>Pass</strong> or <strong>Not Yet</strong> with brief feedback. There is no partial credit.
+                <div class="form-group form-checkbox">
+                    <input type="checkbox" id="understand" name="understand" required>
+                    <label for="understand">
+                        I understand my submission will receive <strong>Pass</strong> or <strong>Not Yet</strong>
+                        with brief feedback. There is no partial credit.
                     </label>
                 </div>
 
-                <button type="submit" class="btn btn-full">Submit for Review</button>
+                <button type="submit" class="btn-submit">Submit for Review</button>
             </form>
-        </section>
 
-        <section>
-            <h2>What Happens Next</h2>
-            <div class="info-box">
-                <p><strong>Review time:</strong> You'll receive feedback within 7 days.</p>
-                <p><strong>Pass:</strong> You've demonstrated structural clarity. You can proceed to Module 2 when it's available.</p>
-                <p><strong>Not Yet:</strong> You'll receive specific feedback on what to improve. You may revise and resubmit once.</p>
+            <div class="notice-box">
+                <p>
+                    <strong>What happens next:</strong> You'll receive feedback within 7 days. If you receive
+                    "Not Yet," you may revise and resubmit once. Passing this assignment is required to proceed
+                    to Module 2.
+                </p>
             </div>
         </section>
 
-        <footer>
-            <p>Questions? <a href="mailto:hello@zavia.academy">hello@zavia.academy</a></p>
-            <p class="copyright">ZAVIA Strategy Academy</p>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-brand">ZAVIA</div>
+                <p class="footer-tagline">Structure. Judgment. Endurance.</p>
+                <p class="footer-contact">
+                    <a href="mailto:hello@zavia.academy">hello@zavia.academy</a>
+                </p>
+                <p class="footer-copyright">© 2025 ZAVIA Strategy Academy</p>
+            </div>
         </footer>
     </div>
 </body>
