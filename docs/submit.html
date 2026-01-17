@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Analysis — ZAVIA Strategy Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="eyebrow">ZAVIA Strategy Academy</p>
+            <h1>Submit Your Analysis</h1>
+            <p class="tagline">Module 1: Structural Clarity</p>
+        </header>
+
+        <nav class="module-nav">
+            <a href="module-1.html">← Back to Reading</a>
+        </nav>
+
+        <section>
+            <div class="notice" style="margin-bottom: 32px;">
+                <strong>Before you submit:</strong> Make sure your analysis is 500-800 words and passes the Clarity Test (specific, explains mechanism, makes prediction, offers non-obvious insight).
+            </div>
+
+            <form class="submission-form" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="analysis">Your Structural Analysis</label>
+                    <textarea id="analysis" name="analysis" required rows="20" placeholder="Paste your 500-800 word analysis here..."></textarea>
+                    <p class="form-hint">Word count will be verified. Submissions outside 500-800 words will be returned.</p>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="understand" required>
+                        I understand my submission will receive <strong>Pass</strong> or <strong>Not Yet</strong> with brief feedback. There is no partial credit.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-full">Submit for Review</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>What Happens Next</h2>
+            <div class="info-box">
+                <p><strong>Review time:</strong> You'll receive feedback within 7 days.</p>
+                <p><strong>Pass:</strong> You've demonstrated structural clarity. You can proceed to Module 2 when it's available.</p>
+                <p><strong>Not Yet:</strong> You'll receive specific feedback on what to improve. You may revise and resubmit once.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Questions? <a href="mailto:hello@zavia.academy">hello@zavia.academy</a></p>
+            <p class="copyright">ZAVIA Strategy Academy</p>
+        </footer>
+    </div>
+</body>
+</html>
