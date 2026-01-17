@@ -5,7 +5,7 @@ A minimal, static system for testing whether serious people will read, think, an
 ## What This System Does
 
 1. **Displays a landing page** explaining Module 1
-2. **Links to Stripe** for payment ($97)
+2. **Links to Stripe** for payment ($19 per module)
 3. **Redirects to thank-you page** with instructions
 4. **Links to Google Doc** containing the module content
 5. **Links to Google Form** for submission
@@ -43,7 +43,7 @@ docs/
 
 | Service | Purpose | Integration |
 |---------|---------|-------------|
-| Stripe Payment Link | Collect $97 payment | Link on index.html |
+| Stripe Payment Link | Collect $19 payment | Link on index.html |
 | Google Doc | Module content (view-only) | Link on thank-you.html and free-access.html |
 | Google Form | Collect submissions | Link on thank-you.html and free-access.html |
 | Google Sheets | Track submissions | Connected to Google Form (automatic) |
@@ -76,7 +76,7 @@ Before going live, replace these placeholders:
 ## Stripe Setup
 
 1. Create a product in Stripe Dashboard
-2. Set price to $97 (one-time)
+2. Set price to $19 (one-time, per module)
 3. Create a Payment Link
 4. Set success URL to: `https://[your-username].github.io/zavia-strategy-academy/thank-you.html`
 5. Copy the payment link to index.html
